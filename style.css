@@ -57,13 +57,9 @@ body {
     opacity: 1;
 }
 
-.bkgr-grey {
+.bkgr-profile {
     position: relative;
-}
-
-.container-title {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 10px;
 }
 
 .description {
@@ -77,35 +73,32 @@ hr.line {
     border-top-color: lightgrey;
 }
 
-.container .row div img {
+#profile-pic {
     width: 90%;
     max-width: 250px;
     border-radius: 50%;
     box-shadow: 10px 10px 5px grey;
 }
 
-.bkgr-white {
+.bkgr-white, .bkgr-hobbies {
     position: relative;
-    padding: 40px 140px;
+    padding: 10px;
     background-color: rgb(243, 239, 224);
 }
 
-.bkgr-work {
-    position: relative;
-    padding: 40px 140px;
+.bkgr-work, .container-title, .abilities, .subtitle {
+    margin: 10px;
 }
 
-#subtitle {
-    text-align: center;
+.work-pic {
+    margin-top: 10px;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+}
+.subtitle, .blue {
     color: rgb(25, 101, 172);
-}
-
-#footer {
-    position: relative;
-    bottom: 0;
-    height: 400px;
-    width: 100%;
-    background-color: #272626;
 }
 
 .title {
@@ -118,13 +111,20 @@ hr.line {
     color: rgb(25, 101, 172);
 }
 
+#footer {
+    position: relative;
+    bottom: 0;
+    padding: 40px 100px;
+    height: 400px;
+    width: 100%;
+    background-color: #272626;
+}
+
 .link {
     list-style-type: none;
-    padding: 10px;
 }
 
 .link a {
-    padding-left: 10px;
     color: white;
     opacity: 0.6;
     text-decoration: none;
@@ -133,7 +133,6 @@ hr.line {
 
 .link a:hover {
     opacity: 1;
-    padding-left: 10px;
     color: white;
     text-decoration: none;
     padding-left: 10px;
@@ -141,34 +140,18 @@ hr.line {
 
 #social {
     position: absolute;
-    top: calc(60% - 90px);
-    left: calc(30% - 150px);
+    /* top: calc(50% - 56px);
+    left: calc(50% - 150px); */
 }
 
 .fa {
     padding: 7px;
+    margin-right: 10px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    /* margin: 1px 1px; */
   }
 
-   .fa-facebook {
-    background: #3B5998;
+   .fa-facebook, .fa-linkedin, .fa-yahoo, .fa-instagram {
     color: white;
   }
-
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-
-  .fa-yahoo {
-    background: #430297;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  } */
