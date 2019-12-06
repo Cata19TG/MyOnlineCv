@@ -1,20 +1,16 @@
-// var contact = document.getElementById('header-contact');
-// var contact2 = document.getElementById('contact');
-// function scroll1() {
-//     contact.addEventListener('click', window.location.href = contact2);
-// }
+window.onscroll = function() {scrollFunction()};
+var header = document.getElementById("header");
 
-// scroll1();
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    header.style.top = "0";
+    header.style.transitionDuration = "0.7s";
+  } else {
+    header.style.top = "-72px";
+    }
 
-// window.onscroll = function() {myFunction()};
+    // if (document.body.scrollTo = true) {
+    //     header.style.top = "-72px";
+    // }
+}
 
-// var header = document.getElementById("header");
-// var sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
