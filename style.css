@@ -6,6 +6,7 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+/* header style*/
 #header {
     position: fixed;
     z-index: 1;
@@ -37,11 +38,11 @@ body {
     text-decoration: none;
 }
 
-
 .content {
     min-width: 400px;
 }
 
+/* bkg image styling */
 #img-background img {
     position: relative;
     height: 100%;
@@ -120,17 +121,23 @@ hr.line {
     padding: 40px;
 }
 
+.empty {
+    color: rgb(25, 101, 172);
+}
+
+.checked {
+    color: black;
+    opacity: 0.2;
+}
+
+.checked, .empty {
+    padding-top: 4px;
+    float: right;
+}
+
 .container-title {
     padding: 10px;
 }
-
-/* .education-pic {
-    margin-top: 10px;
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px grey;
-} */
 
 .work-pic {
     margin-top: 10px;
@@ -162,10 +169,13 @@ hr.line {
     color: rgb(25, 101, 172);
 }
 
+/* footer stiling*/
 #footer {
     position: relative;
     bottom: 0;
-    height: 250px;
+    margin-top: 20px;
+    padding: 10px;
+    height: 700px;
     width: 100%;
     background-color: #272626;
 }
@@ -182,64 +192,110 @@ hr.line {
 .social {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: calc(50% - 200px);
+    width: 400px;
 }
 
 .social-text {
-    font-family: 'Trebuchet MS';
-    font-size: 19px;
+    width: 200px;
+    font-family: Josefin sans, sans-serif;
+    font-size: 14px;
     font-style: italic;
     color: white;
+    text-align: center;
 }
 
 .social p {
     display: inline-block;
 }
-.empty {
-    color: rgb(25, 101, 172);
-}
-
-.checked {
-    color: black;
-    opacity: 0.2;
-}
-
-.checked, .empty {
-    padding-top: 4px;
-    float: right;
-}
 
 .fas {
-    padding: 15px;
-    font-size: 30px;
-    width: 50px;
+    padding: 10px;
+    width: 40px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius: 10px;
+    border-radius: 5px;
+    background: #383838;
+    color: white;
   }
   
-  .fas:hover {
-    opacity: 0.7;
-    transition: 0.2s;
-  }
-  
-  .fa-facebook {
+  .fa-facebook:hover {
     background: #3B5998;
     color: white;
   }
 
-  .fa-yahoo {
+  .fa-yahoo:hover {
     background: #430297;
     color: white;
   }
 
-  .fa-linkedin {
+  .fa-linkedin:hover {
     background: #007bb5;
     color: white;
   }
   
-  .fa-instagram {
+  .fa-instagram:hover {
     background: #125688;
     color: white;
   }
+
+
+  /* submit form stiling */
+.form {
+    position: absolute;
+    left: calc(50% - 300px);
+    font-family: Josefin sans, sans-serif;
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    padding: 25px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Josefin sans, sans-serif;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+.form, .input-field, input[type="text"],
+.form textarea {
+    width: 100%;
+    border: 0.5px solid #e0e0e0;
+}
+
+.form textarea {
+    height: 70px;
+    resize: none;
+}
+
+.btn {
+    width: 100%;
+    font-weight: bold !important;
+    letter-spacing: 5px;
+}
+
+.form .btn input[type="submit"] {
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+#error-message {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
